@@ -34,3 +34,21 @@ availability_30: number of days available in the next 30 days
 accomodates: number of people the property can accomodate.
 
 In this data exploration exercise I will precise the analysis on the Airbnb listings to Seatlle, Washington, United States.
+
+# What Are the Busiest Times of the Year to Visit Seattle?
+![Screen Shot 2020-03-01 at 12 05 27 AM](https://user-images.githubusercontent.com/22896571/75622018-9267aa00-5b50-11ea-9792-8c437bc13a69.png)
+
+![Screen Shot 2020-03-01 at 12 05 18 AM](https://user-images.githubusercontent.com/22896571/75622019-9267aa00-5b50-11ea-8e93-98b96c64de3b.png)
+# Number of Listings in each Neighbourhood
+![Screen Shot 2020-03-01 at 12 05 35 AM](https://user-images.githubusercontent.com/22896571/75622017-91cf1380-5b50-11ea-96a1-ba513fdfdd49.png)
+# HeatMap
+![download](https://user-images.githubusercontent.com/22896571/75622013-8f6cb980-5b50-11ea-8b5a-be8c203b5413.png)
+
+# Analysis
+I see the distribution for pricing is strongly skewed right. This again makes sense as a majority of the listings on Airbnb are single individual listings. Additionally, Airbnb does strongly cater to travelers who are looking for cheaper places to stay for short durations of time. There are of course listings with a high pricing as well; intuitively this matches with hosts that are listing a high value property such as an entire house. Looking at the heat map, we can see that 'accomodates', 'bedrooms', 'bathrooms', 'beds' have the highest correlation to the price.
+
+To know how these features affect the price of the listings, we have implemented K means and GMM clustering algorithms on these features vs the price of the listing
+The number of clusters is determined using the elbow method.
+
+Both the algorithms formed very much similar clusters but K-means seems doing a better clustering job according to "Price vs Bed" plots. From the GMM plot, the darker green dots has been scattered and mixed with the purple cluster. Also, we see that these features have a positive corelation with the price. As the number of bedrooms, accomodates, bathrooms and beds increase, the price also increases.
+
