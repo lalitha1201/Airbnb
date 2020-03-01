@@ -56,5 +56,10 @@ To know how these features affect the price of the listings, I have implemented 
 The number of clusters is determined using the elbow method.
 
 Both the algorithms formed very much similar clusters but K-means seems doing a better clustering job according to "Price vs Bed" plots. From the GMM plot, the darker green dots has been scattered and mixed with the purple cluster. Also, I see that these features have a positive corelation with the price. As the number of bedrooms, accomodates, bathrooms and beds increase, the price also increases.
+
 # Comparisions of different regression algorithms
+
+![Screen Shot 2020-03-01 at 12 18 44 AM](https://user-images.githubusercontent.com/22896571/75622153-461d6980-5b52-11ea-92f7-1891e459dd79.png)
+
+![Screen Shot 2020-03-01 at 12 18 37 AM](https://user-images.githubusercontent.com/22896571/75622154-474e9680-5b52-11ea-824b-d60e9fdd5202.png)
 
